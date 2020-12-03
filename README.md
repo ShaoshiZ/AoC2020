@@ -25,5 +25,14 @@ Time & Rank
 00:25:32  3907
 ```
 
+## Day 3
 
+By now, I am pretty convinced that from [Day 3](https://adventofcode.com/2020/day/3) onwards, all the questions will involve some string manipulation. Day 3 question is  a simple counting problem. The only catch for MATLAB is to make the raw inputs (consists of `.`  and `#`) into 0s and 1s. After converting a string array to an integer array, the rest is just counting how many 1s along the zigzag path. Another thing worth noting is that the x-y plane in MATLAB array is the clockwise-90-degree-rotated version of mathematical x-y plane.
 
+After finishing the first part, the second part is almost like a free meal. Just change the amount of incremental of x-axis and y-axis to different values and multiply all the results, that product is the final answer.
+
+```
+Time & Rank
+00:23:56  5488
+00:26:22  4184
+```
