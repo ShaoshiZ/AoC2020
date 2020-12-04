@@ -36,3 +36,16 @@ Time & Rank
 00:23:56  5488
 00:26:22  4184
 ```
+
+## Day 4
+
+Well, [Day 4](https://adventofcode.com/2020/day/4) is another string manipulation problem. This problem is actually very straightforward, but for some reason, I decided to go for a extremely inefficient approach on the second part. It took me 6 hours before I decided to let my first approach go and restart doing everything. That is the reason why the codes for part1 and part2 are very different structurally. 
+
+The idea of solution is simple. First, remove all the carriage returns and collapse each passport into 1 line. Then, parse the passports into key-value pairs. By analysing each key-value pair, the rest of the questions are very straightforward to implement. The first time I approached this problem, I chose not to parse each passports into key-value pair, but hope to get the results in a quick-and-dirty way. Of course, that quick-and-dirty way did not work and I spent much longer time refactoring the codes in the end. Lesson learnt today: Remeber to let it go at the right time. Sometimes starting a new approach is much better than fixing the old approach.
+
+```
+Time & Rank
+00:18:02  3562
+06:19:09  21886 (Wow)
+```
+
