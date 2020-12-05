@@ -49,3 +49,8 @@ Time & Rank
 06:19:09  21886 (Wow)
 ```
 
+## Day 5
+
+[Day 5](https://adventofcode.com/2020/day/5) question is really an interesting one. The seating ID is encoded by a set of letters, where each letter cuts the space into 2 halves. Each spatial point can be uniquely characterized by 7 row letters and 3 column letters. The first part is just to translate this characterization process into codes. 
+
+The second part is really fun, I managed to find the missing seating ID using EXCEL. But to visualize it better, I plot all the seat coordinates in MATLAB and found a missing dot in the middle (Of course, as the question mentioned, the missing seats at the very front and back do not count).  The seating ID of that missing dot (in red circle) is the answer.
