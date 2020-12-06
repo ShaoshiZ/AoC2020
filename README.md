@@ -61,3 +61,13 @@ Time & Rank
 00:43:00  5534
 ```
 
+## Day 6
+
+Finally, we got a [question](https://adventofcode.com/2020/day/6) that I can efficiently implement on MATLAB. The key to 2 parts of the question is just `unique` and `intersect` functions. There is a slight twist in the second part as the number of people in each group is not fixed and `intersect` function can only compute the intersection of 2 arrays. A while loop can solve both problems.
+
+```
+Time & Rank
+00:09:39  3531
+00:19:08   3471
+```
+
