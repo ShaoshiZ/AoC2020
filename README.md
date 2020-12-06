@@ -68,6 +68,6 @@ Finally, we got a [question](https://adventofcode.com/2020/day/6) that I can eff
 ```
 Time & Rank
 00:09:39  3531
-00:19:08   3471
+00:19:08  3471
 ```
 
