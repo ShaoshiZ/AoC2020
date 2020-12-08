@@ -73,9 +73,41 @@ Time & Rank
 
 ## Day 7
 
+I do not like my [Day 7](https://adventofcode.com/2020/day/7) solution at all. Even though the solution is intuitive, but it is not clean, not efficient and not easy to use. First of all, this question reminds of of [Day 14](https://adventofcode.com/2019/day/14) question of 2019, which also took me horribly long time to solve. In fact, anything that involves recursion and maybe a fancy data structure will direcly knock me out. Before doing any real solving, the input file needs to be parsed into 2 separate columns, one column of outer bags, one column of inner bags.
+
+For the first part, look for 'shiny gold' in the inner bag columns, then put the corresponding outer bag color into a list. This list will eventually gets longer and longer and stops. The final number of colors is the answer. To use my script, run 
+
+```
+outer_bag_list = Day7_part1({'shiny gold'});
+outer_bag_list = Day7_part1({outer_bag_list});
+```
+
+Run the second line multiple times until `outer_bag_list` becomes an empty list. Add the number of colors along the way, and that will be the final answer. 
+
+For the second part, I used a top-down approach. From the outer-most layer, gradully multiply the number of inner bags. Eventually, the codes will reach the inner-most bags and stop. Run iteratively
+
+```
+inner_bag_list = Day7_part2({'shiny gold'});
+inner_bag_list = Day7_part2(inner_bag_list);
+```
+
+Prepare an EXCEL sheet and record down the output at each iteration. Sum everything up except the number in front of 'The end' (to avoid double-counting). The sum is the final answer for the second part.
+
 ```
 Time & Rank
 00:46:47  4251
 04:00:23  10809
+```
+
+## Day 8
+
+[Day 8](https://adventofcode.com/2020/day/8) question gives me a vibe of last year  `Intcode` question. I like this kind of question much more than the question from yesterday. Hopefully, we can continue to build on today's codes in the following days. The first part of the question is simply to implement according to the instructions. The implementation is straightforward as long as the codes can track the instruction positions (or instruction pointers) properly. In my implementation, I keep track of all instruction positions that are executed before, thus, if there is a repeated instruction somewhere, the while-loop will stop and return the latest `accumulator` value.
+
+The second part is more like a wrapper function of the first part. In this part, I chose to modify the instructions line by line if a `nop` or `jmp` is encountered. If by modifying one of these instructions, the instruction position can reach 1 beyond the last instruction (in my case, 642), that means the program is fixed.
+
+```
+Time & Rank
+00:31:47  7200
+00:48:34  5328
 ```
 
