@@ -111,3 +111,16 @@ Time & Rank
 00:48:34  5328
 ```
 
+## Day 9
+
+Unfortunately, I have to start doing [today's question](https://adventofcode.com/2020/day/9) 3 hours 13 minutes later than usual. IMO, today's question is surprisingly simple. For the first part, compute sums of all combination of pairs of 2 different numbers within a section (25 numbers) and check if the next number is a member of the array of sums. For the second part, since the required set is contiguous, the stopping criteria are either the sum blows up (greater than the answer from part 1) or reaching the bottom of the list while the sum is still smaller than the asnwer from part 1. 
+
+```
+Time & Rank
+03:37:42  18066
+03:51:59  16517
+Actual Time Taken
+00:24:00 (approximate to minutes)
+00:39:00 (approximate to minutes)
+```
+
