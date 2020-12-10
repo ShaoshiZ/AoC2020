@@ -154,9 +154,9 @@ By using the above algorithm, the updated list will look like
 
 ```
 154 "1"
-151 1 = 1 				(1)
-150 1 = 1 				(1)
-149 2 = 1 + 1 		(2)
+151 1 = 1         (1)
+150 1 = 1         (1)
+149 2 = 1 + 1     (2)
 148 4 = 2 + 1 + 1 (3)
 ```
 
