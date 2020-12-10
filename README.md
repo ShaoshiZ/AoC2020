@@ -124,3 +124,49 @@ Actual Time Taken
 00:39:00 (approximate to minutes)
 ```
 
+## Day 10
+
+When I first looked at the second part of [Day 10](https://adventofcode.com/2020/day/10) question, I thought this would be a very hard problem and might involve some fancy dynamic programming. But it turns out that there is a very simple approach (which took me 1 hour to come up with).
+
+For the first part, we just need to sort the entries in ascending order and calculate the difference between 2 consecutive entries. Then, count the number of difference that is equal to 1 and the number of difference that is equal to 3. Multiply these 2 counts, and that is the answer for part 1.
+
+The second part looks very challenging to me at first because I thought some dynamic programming is needed. But there is a very simple approach. This time, we need to sort the entries from high to low, in other words, we are finding the valid connections in reverse. Then take each entry as a starting point, count how many different "children" it can have. For example, a list like `154 151 150 149 148` (notice the entries are in descending order). `154` has no possible children because it is the end of the list (but we will assign 1 to this entry as well, for numerical purpose). Therefore, `154` has "1" child. Next, for `151`, we can only have 1 child, which is `154`, so we will assign `1` to `151`. Smae for `150`.For `149`, there are 2 possible children, `150` or `151`, so we will assign `2` to `149`. Then we can construct a list like this
+
+```
+154 "1"
+151 1
+150 1
+149 2
+148 3
+```
+
+The first column is the original entry, the second column is the number of children the entry can have, except for the first entry, which we assign a fake child to it. To get the final answer, we need to get the total number of children for each entry. That is, the number of children acculumated. The algorithm is as follows:
+
+Starting from the first entry,
+
+1) If the number of children is 1, then the total number of children is equal to the number of children of the previous entry. Since the number of children for `150` is `1`, then the total number of children for `150` will be the same as the number of children of `151`, which is `1`. 
+
+2) If the number of children is 2, then the total number of children is equal to the sum of the number of children of the previous 2 entries.
+
+3) If the number of children is 3, then the total number of children is equal to the sum of the number of children of the previous 3 entries.
+
+By using the above algorithm, the updated list will look like
+
+```
+154 "1"
+151 1 = 1 				(1)
+150 1 = 1 				(1)
+149 2 = 1 + 1 		(2)
+148 4 = 2 + 1 + 1 (3)
+```
+
+So, the total number of ways of arranging the adaptors is 4, which is the total number of children of the **last entry**.
+
+```
+Time & Rank
+00:17:21   5036
+01:41:38   5192
+```
+
+
+
