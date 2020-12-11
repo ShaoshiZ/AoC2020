@@ -168,5 +168,15 @@ Time & Rank
 01:41:38   5192
 ```
 
+## Day 11
+
+Well, [today's puzzle](https://adventofcode.com/2020/day/11) is pretty interesting and straightforward to implement. It is a variation of [Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life). After converting the input to a numerical array, the only tedius part is to consolidate the seating status of the adjacent 8 seats. For the second part, the seating status of the 4 diagonal directions are determined by a `while` loop. The `while` loop stops once it hits a non-floor seating status, otherwise the it will continue moving in a zigzag fashion. 
+
+```
+Time & Rank
+00:46:38   4061
+02:13:52   6147
+```
+
 
 
