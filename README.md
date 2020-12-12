@@ -178,5 +178,15 @@ Time & Rank
 02:13:52   6147
 ```
 
+## Day 12
 
+For [Day 12 puzzle](https://adventofcode.com/2020/day/12), I almost hard-coded everything. Even though I believe there is a much more efficient implementation method, I chose the most intuitive (to me) way to solve it. 
+
+First, I convert `E, W, S, N, L, R, F` to `1, 2, 3, 4, 5, 6, 7`. I find working with numbers is much easier than manipulating the actual direction. Second, the coordinates I used follows the convention of `East` and `North` as **positive** directions and `South` and `West` as **negative** directions. The rest is just to implement according to the puzzle specifications. Nothing exiciting about it.
+
+```
+Time & Rank
+00:31:04   4334
+00:53:49   3495
+```
 
