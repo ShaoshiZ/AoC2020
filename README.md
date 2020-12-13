@@ -190,3 +190,13 @@ Time & Rank
 00:53:49   3495
 ```
 
+## Day 13
+
+[Day 13 puzzle](https://adventofcode.com/2020/day/13) is by far the weirdest puzzle. For the first part, we just need to find the smallest remainder. For the second part, it is about [Chinese Remainder Theorem](https://en.wikipedia.org/wiki/Chinese_remainder_theorem). I thought it would involve Diophantine Equation, but eventually I spent 3 hours and couldn't get anything. All these coprime numbers did ring a bell but I did not even **think** about Chinese Remainder Theorem. Anyway, this puzzle is extremely simple for those who knows the math; but I do not know how challenging this puzzle would be for those who derives Chinese Remainder Theorem from scratch.
+
+````
+Time & Rank
+00:08:24   1167
+03:18:04   4685
+````
+
