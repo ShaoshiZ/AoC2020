@@ -202,3 +202,13 @@ Time & Rank
 03:18:04   4685
 ````
 
+## Day 14
+
+[Today's puzzle](https://adventofcode.com/2020/day/14) is more striaghtforward to implement than yesterdays's puzzle. The implementations involve pattern parsing, binary-to-decimal/decimal-to-binary conversion, bit-wise comparison, and data-logging (with overwrite). The only tricky part for part 2 is to generate all possible combinations of '0's and '1's and insert them to replace 'X'. In MATLAB, finding all the combinations can be achieved in one line: `   all_combination = dec2bin(0:2^num_X - 1, num_X) - '0';` .
+
+```
+Time & Rank
+00:37:51   3564
+02:22:04   5273
+```
+
