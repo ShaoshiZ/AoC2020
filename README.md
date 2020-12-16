@@ -212,3 +212,23 @@ Time & Rank
 02:22:04   5273
 ```
 
+## Day 15
+
+[Day 15](https://adventofcode.com/2020/day/15) is about [Van Eck sequence](https://oeis.org/A181391). 
+
+```
+Time & Rank
+00:19:39   2003
+01:51:57   6112
+```
+
+## Day 16
+
+[Day 16](https://adventofcode.com/2020/day/16) is a really interesting puzzle. I should have done the second part 1 hour earlier if I did not have a meeting half way. The second part is like a treasure hunt. I got my first correct answer using Excel manually (It is now incorporated to the MATLAB script). The algorithm for the second part is interesting but difficult to explain.
+
+```
+Time & Rank
+00:22:26   2401
+02:37:14   5116
+```
+
