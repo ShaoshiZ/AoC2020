@@ -232,3 +232,15 @@ Time & Rank
 02:37:14   5116
 ```
 
+### Day 17
+
+[This puzzle](https://adventofcode.com/2020/day/17) took me 30 minutes to understand. This is also the first puzzle that I spent 1 hour just on the first part. The second part is done by some minor changes in dimension and trial and error (It is difficult to wrap my head around the 4-th dimension, so I have to use trial-and-error to ensure the dimensions match). The most interesting part of the puzzle is the realization of using convolution to compute the neighbors, what a brilliant idea (thanks to this [webpage](https://www.mathworks.com/matlabcentral/answers/402080-how-to-find-the-neighbors-of-each-element-in-a-matrix)).
+
+```
+Time & Rank
+01:01:51   2749
+03:19:00   5582
+```
+
+
+
