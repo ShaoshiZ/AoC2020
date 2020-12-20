@@ -232,7 +232,7 @@ Time & Rank
 02:37:14   5116
 ```
 
-### Day 17
+## Day 17
 
 [This puzzle](https://adventofcode.com/2020/day/17) took me 30 minutes to understand. This is also the first puzzle that I spent 1 hour just on the first part. The second part is done by some minor changes in dimension and trial and error (It is difficult to wrap my head around the 4-th dimension, so I have to use trial-and-error to ensure the dimensions match). The most interesting part of the puzzle is the realization of using convolution to compute the neighbors, what a brilliant idea (thanks to this [webpage](https://www.mathworks.com/matlabcentral/answers/402080-how-to-find-the-neighbors-of-each-element-in-a-matrix)).
 
@@ -240,6 +240,20 @@ Time & Rank
 Time & Rank
 01:01:51   2749
 03:19:00   5582
+```
+
+## Day 20
+
+[This puzzle](https://adventofcode.com/2020/day/20) is fun but chanllenging to me. The tedious part is to code up all the possiblities of tile-matching (flipping, rotation). The nice part is that each edge of the tile at most can match with 1 edge of another tile (no 3 same edges). For the first part, we only need to care about 4 corners, so just look for tiles that have 2 unmatched edges. Simple to formulate the idea, tedious to code up the actual scripts.
+
+The second part literally takes me 4 hours to solve! At some point, I even thought about piecing everything together manually. But as soon as I realized all the tiles are rotated and flipped, it becomes time-consuming like hell to do it manually. In the end, I decided to piece together the first row, then fix the direction of the tiles of the first row along the way. Then, starting from each tile in the first row, piece together everything else column by column from top to bottom. Finding the sea monsters is actually the easiest part if using convolution. Define a convolution kernel which has a shape of the sea monster. Convolve with the entire image. The count the number of 15 (that is the number of # in a sea monster). The final answer is just total number of # minus off 15 times the number of sea monster.
+
+I am so proud that I managed to do this question all by myself. Now that I think of it, maybe I can finish the second part manually in 4 hours as well (but it is definitely more error-prone and I might be died of boredom along the way).
+
+```
+Time & Rank
+01:20:05   1877
+05:28:36   1605
 ```
 
 
