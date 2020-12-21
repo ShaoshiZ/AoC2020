@@ -246,14 +246,30 @@ Time & Rank
 
 [This puzzle](https://adventofcode.com/2020/day/20) is fun but chanllenging to me. The tedious part is to code up all the possiblities of tile-matching (flipping, rotation). The nice part is that each edge of the tile at most can match with 1 edge of another tile (no 3 same edges). For the first part, we only need to care about 4 corners, so just look for tiles that have 2 unmatched edges. Simple to formulate the idea, tedious to code up the actual scripts.
 
-The second part literally takes me 4 hours to solve! At some point, I even thought about piecing everything together manually. But as soon as I realized all the tiles are rotated and flipped, it becomes time-consuming like hell to do it manually. In the end, I decided to piece together the first row, then fix the direction of the tiles of the first row along the way. Then, starting from each tile in the first row, piece together everything else column by column from top to bottom. Finding the sea monsters is actually the easiest part if using convolution. Define a convolution kernel which has a shape of the sea monster. Convolve with the entire image. The count the number of 15 (that is the number of # in a sea monster). The final answer is just total number of # minus off 15 times the number of sea monster.
+The second part literally took me 4 hours to solve! At some point, I even thought about piecing everything together manually. But as soon as I realized all the tiles are rotated and flipped, it becomes time-consuming like hell to do it manually. In the end, I decided to piece together the first row, then fix the direction of the tiles of the first row along the way. Then, starting from each tile in the first row, piece together everything else column by column from top to bottom. Finding the sea monsters is actually the easiest part if using convolution. Define a convolution kernel which has a shape of the sea monster. Convolve with the entire image. The count the number of 15 (that is the number of # in a sea monster). The final answer is just total number of # minus off 15 times the number of sea monster.
 
-I am so proud that I managed to do this question all by myself. Now that I think of it, maybe I can finish the second part manually in 4 hours as well (but it is definitely more error-prone and I might be died of boredom along the way).
+I am so proud that I managed to do this question all by myself. Now that I think of it, maybe I can finish the second part manually in 4 hours as well (but it is definitely more error-prone and I might die of boredom along the way).
 
 ```
 Time & Rank
 01:20:05   1877
 05:28:36   1605
+```
+
+## Day 21
+
+The idea of [this puzzle](https://adventofcode.com/2020/day/20) is very simple, so the only thing to do is just to translate my thoughts into codes. After parsing everything, since there is a one-to-one mapping between ingredients and allergens, we can sift out all allergens by taking the intersection of all the foods, then form a unique list of allergens (Of course, the correspondence between English name and the "foreign" name maybe off, but we don't need that in the first part, and we can easily fix the correspondence for the second part).
+
+For the first part, count the total number of ingredients and the total number of occurrences of allergens. The difference is the answer for part 1.
+
+For part 2, the first time of this year that the answer is not numerical! Just fix the correspondence based on `allergen_dict`, then we can get the answer.
+
+Today's puzzle is much simpler than yesterday's.
+
+```
+Time & Rank
+01:15:58   2691 
+01:22:31   2485
 ```
 
 
