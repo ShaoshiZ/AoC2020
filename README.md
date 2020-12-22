@@ -258,7 +258,7 @@ Time & Rank
 
 ## Day 21
 
-The idea of [this puzzle](https://adventofcode.com/2020/day/20) is very simple, so the only thing to do is just to translate my thoughts into codes. After parsing everything, since there is a one-to-one mapping between ingredients and allergens, we can sift out all allergens by taking the intersection of all the foods, then form a unique list of allergens (Of course, the correspondence between English name and the "foreign" name maybe off, but we don't need that in the first part, and we can easily fix the correspondence for the second part).
+The idea of [this puzzle](https://adventofcode.com/2020/day/21) is very simple, so the only thing to do is just to translate my thoughts into codes. After parsing everything, since there is a one-to-one mapping between ingredients and allergens, we can sift out all allergens by taking the intersection of all the foods, then form a unique list of allergens (Of course, the correspondence between English name and the "foreign" name maybe off, but we don't need that in the first part, and we can easily fix the correspondence for the second part).
 
 For the first part, count the total number of ingredients and the total number of occurrences of allergens. The difference is the answer for part 1.
 
@@ -271,6 +271,18 @@ Time & Rank
 01:15:58   2691 
 01:22:31   2485
 ```
+
+## Day 22
+
+Well, I spent almost 3 hours on [part 2](https://adventofcode.com/2020/day/20) because I did not understand the infinite loop prevention rule correctly at the beginning. I thought the entire game stops if there is an infinite loop everywhere in the game, but actually only the sub-game stops. There are also 2 weird situations where I never thought those could actually happen. One is that without specifiying the appending direction, the default appending direction is by **columns**, instead of **rows**; the other one is regarding my way to check if there is an infinite loop, I thought the product of 2 players' scores would be a good way to keep track of all states, but apparently there are cases that $4 = 1\times4 = 2\times2$. Therefore, instead of direct product of the 2 raw scores, I first square the card values then calculate the scores. Anyway, this is yet another easy puzzle.
+
+```
+Time & Rank
+00:10:16   1142
+02:58:00   3916 (Hmm...)
+```
+
+
 
 
 
