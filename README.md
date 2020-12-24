@@ -274,12 +274,22 @@ Time & Rank
 
 ## Day 22
 
-Well, I spent almost 3 hours on [part 2](https://adventofcode.com/2020/day/20) because I did not understand the infinite loop prevention rule correctly at the beginning. I thought the entire game stops if there is an infinite loop everywhere in the game, but actually only the sub-game stops. There are also 2 weird situations where I never thought those could actually happen. One is that without specifiying the appending direction, the default appending direction is by **columns**, instead of **rows**; the other one is regarding my way to check if there is an infinite loop, I thought the product of 2 players' scores would be a good way to keep track of all states, but apparently there are cases that $4 = 1\times4 = 2\times2$. Therefore, instead of direct product of the 2 raw scores, I first square the card values then calculate the scores. Anyway, this is yet another easy puzzle.
+Well, I spent almost 3 hours on [part 2](https://adventofcode.com/2020/day/22) because I did not understand the infinite loop prevention rule correctly at the beginning. I thought the entire game stops if there is an infinite loop everywhere in the game, but actually only the sub-game stops. There are also 2 weird situations where I never thought those could actually happen. One is that without specifiying the appending direction, the default appending direction is by **columns**, instead of **rows**; the other one is regarding my way to check if there is an infinite loop, I thought the product of 2 players' scores would be a good way to keep track of all states, but apparently there are cases that $4 = 1\times4 = 2\times2$. Therefore, instead of direct product of the 2 raw scores, I first square the card values then calculate the scores. Anyway, this is yet another easy puzzle.
 
 ```
 Time & Rank
 00:10:16   1142
 02:58:00   3916 (Hmm...)
+```
+
+## Day 24
+
+Second last day of AoC this year. [This puzzle](https://adventofcode.com/2020/day/24) is relatively simple. The key idea is to track the center of each hexagon using a scaled and rotated plane coordiate system. I do not like my solution for the second part. It is highly unoptimized.
+
+```
+Time & Rank
+01:52:22   3829
+05:29:45   5535
 ```
 
 
