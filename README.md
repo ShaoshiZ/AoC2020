@@ -292,6 +292,16 @@ Time & Rank
 05:29:45   5535
 ```
 
+## Day 25
+
+Today is the end of AoC 2020. [The puzzle](https://adventofcode.com/2020/day/25) is extremely simple (much simpler than last year, and IMO less fun as well). The implementation is rather straightforward. Merry Christmas!
+
+```
+Time & Rank
+00:24:04   1840
+00:24:08   1520
+```
+
 
 
 
